@@ -1,38 +1,384 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "Inter";
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.home-body {
+  background: none;
+  width: 100vw;
   min-height: 100vh;
+}
+
+.bg {
+  background-image: url("./assets/jcl-background2.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.nav {
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  top: 30px;
+  background-color: rgba(19, 19, 19, 0.8);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logodiv {
+  width: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  border: 3px solid black;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.navbuttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbutton {
+  color: white;
+  font-size: 16px;
+  margin: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 200ms ease-in, transform 100ms ease-in;
+  text-decoration: none;
+}
+
+.navbutton:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.component {
+  width: 90%;
+  min-height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.head {
+}
+
+.about {
+}
+
+.events {
+  min-height: 1000px;
+}
+.component-text {
+  margin-top: -8px;
+}
+
+.component-body {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 170px;
+}
+
+.line {
+  width: 2px;
+  background-color: white;
+  height: 100%;
+}
+
+.box {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.person-container {
+  width: 210px;
+  height: 370px;
+  border: 2px solid white;
+  margin: 0;
+  padding: 0;
+  margin: 5px;
+}
+
+.person-name {
+  text-align: center;
+}
+
+.person-desc {
+  text-align: center;
+  font-size: 13px;
+}
+
+.person-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.teacher-container {
+  width: 170px;
+  height: 270px;
+}
+
+.teacher-image {
+  height: 180px;
+}
+
+.advisor-text {
+  font-weight: 300;
+  font-size: 22px;
+  text-align: right;
+  margin: 10px;
+  line-height: 21px;
+}
+
+.advisor-left {
+  text-align: left;
+}
+
+.person-desc {
+  font-family: "Zilla Slab", sans-serif;
+  font-size: 14px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: 400;
+}
+
+.person-name {
+  font-size: 17px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.teacher-name {
+  font-size: 14px;
+}
+
+.contact-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: white;
+  animation: fade-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.contact {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  transition: opacity 250ms ease-in-out;
+}
+
+.x:hover {
+  opacity: 0.7;
+}
+
+.input {
+  outline: none;
+  border: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: none;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  transition: border-color 250ms ease-in-out;
+  padding: 5px;
+}
+
+.textarea {
+  border: 2px solid white;
+  background: none;
+  height: 50px;
+  color: white;
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  transition: border-color 250ms ease-in-out;
+  padding: 5px;
+}
+
+.input:hover,
+.textarea:hover {
+  border-color: rgb(184, 184, 184);
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: rgb(88, 88, 88);
+}
+
+.submit {
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  margin-top: 5px;
+}
+
+.submit:hover {
+  background-color: rgb(39, 39, 39);
+  color: rgb(255, 255, 255);
+}
+
+.submit:focus {
+  background-color: rgb(19, 19, 19);
+}
+
+.label {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.expand {
+  position: absolute;
+  bottom: 50px;
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 250ms ease-in-out;
+}
+
+.expand-button {
+  width: 40px;
+  height: auto;
+}
+
+.expand:hover {
+  opacity: 0.7;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.contactinfo {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 100vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+  resize: vertical;
+  max-height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img {
+  width: 35px;
+  height: auto;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: opacity 100ms ease-in;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.email-text {
+  font-weight: 500;
+  margin-left: 10px;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+}
+
+.email-container:hover {
+  opacity: 0.7;
+}
+
+.emails-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.piscetas {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  border: 2px solid white;
+  padding: 3px;
+  cursor: pointer;
+  transition: padding 100ms ease-in, border-color 100ms ease-in;
+}
+
+.piscetas:hover {
+  padding: 5px;
+  border-color: rgb(194, 194, 194);
 }
