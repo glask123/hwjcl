@@ -6,6 +6,7 @@ import Leaders from "../components/leaders";
 import Advisors from "../components/advisors";
 import Events from "../components/events";
 import { Helmet } from "react-helmet";
+import Break from '../components/break'
 
 export default function Home() {
   return (
@@ -18,8 +19,11 @@ export default function Home() {
       <div className="component-body">
         <Head />
         <About />
+        <Break height={100}/>
         <Leaders />
+        <Break height={100}/>
         <Advisors />
+        <Break height={100}/>
         <Events />
       </div>
       <div className="bg" />

@@ -1,10 +1,36 @@
 import React from "react";
 import Person from "./person";
 import Default from "../assets/default-person.png";
+import Section from './fullsection'
 
 export default function Leaders() {
   return (
-    <div className="component leaders">
+    <Section title="Student Leaders"/>
+    
+  );
+}
+
+/*
+
+        <Person
+          name="ELI FRIEDMAN"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          img={Default}
+        />
+        <Person
+          name="NICOLE AUSTEN"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          img={Default}
+        />
+        <Person
+          name="AUSTIN LEE"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          img={Default}
+        />
+*/
+
+/*
+<div className="component leaders">
       <div
         style={{
           paddingLeft: "100px",
@@ -27,22 +53,7 @@ export default function Leaders() {
           marginBottom: "180px",
         }}
       >
-        <Person
-          name="ELI FRIEDMAN"
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-          img={Default}
-        />
-        <Person
-          name="NICOLE AUSTEN"
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-          img={Default}
-        />
-        <Person
-          name="AUSTIN LEE"
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-          img={Default}
-        />
+        
       </div>
     </div>
-  );
-}
+*/
