@@ -1,11 +1,30 @@
 import React from "react";
 import Person from "./person";
 import Default from "../assets/default-person.png";
+import Lena from '../assets/lena.JPEG';
+import Melody from '../assets/melody.JPEG';
+import Avery from '../assets/avery.jpg';
 import Section from './fullsection'
 
 export default function Leaders() {
   return (
-    <Section title="Student Leaders"/>
+    <div style={{display: "flex", justifyContent: "center", marginTop: 40}}>
+      <Person
+          name="Avery Konwiser"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          img={Avery}
+        />
+        <Person
+          name="Melody Tang"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          img={Melody}
+        />
+        <Person
+          name="Lena Bagley"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          img={Lena}
+        />
+    </div>
     
   );
 }

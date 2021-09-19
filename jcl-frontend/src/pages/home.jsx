@@ -7,6 +7,8 @@ import Advisors from "../components/advisors";
 import Events from "../components/events";
 import { Helmet } from "react-helmet";
 import Break from '../components/break'
+import Section from '../components/fullsection';
+import Disc from '../assets/discord.png'
 
 export default function Home() {
   return (
@@ -18,9 +20,10 @@ export default function Home() {
       <Nav />
       <div className="component-body">
         <Head />
+        <Break height={40} />
         <About />
         <Break height={100}/>
-        <Leaders />
+        <Section title="Student Leaders"><Leaders /></Section>
         <Break height={100}/>
         <Advisors />
         <Break height={100}/>

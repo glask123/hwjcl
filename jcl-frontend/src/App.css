@@ -19,8 +19,18 @@
   min-height: 100vh;
 }
 
+.discord {
+  transition: border 100ms ease-in;
+  border: 3px solid transparent;
+  border-radius: 12px;
+}
+
+.discord:hover {
+  border: 3px solid white;
+}
+
 .bg {
-  background-color: rgb(16,16,16);
+  background-color: rgb(6, 6, 6);
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -44,12 +54,20 @@
 
 
 .logo {
+  border-radius: 8px;
+  overflow: hidden;
   margin-left: 16px;
   margin-right: 8px;
   width: 80px;
   height: auto;
   border: 3px solid black;
   cursor: pointer;
+  border: 3px solid transparent;
+  transition: border 100ms ease-in;
+}
+
+.logo:hover {
+  border: 3px solid white;
 }
 
 .navbuttons {
@@ -118,15 +136,30 @@
 }
 
 .person-container {
-  width: 210px;
-  height: 370px;
-  border: 2px solid white;
-  margin: 0;
-  padding: 0;
-  margin: 5px;
+  transition: border-color 100ms ease-in;
+  border: 3px solid transparent;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.about-container {
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color 200ms ease-in, background-color 200ms ease-in;
+}
+
+.about-container:hover {
+  color: black;
+  background-color: white;
+}
+
+.person-container:hover{
+  border: 3px solid white;
 }
 
 .person-name {
+  color: white;
   text-align: center;
 }
 

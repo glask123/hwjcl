@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/piscehw.png";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import Disc from '../assets/discord.png'
 
 export default function Nav() {
   return (
@@ -32,6 +33,8 @@ export default function Nav() {
           <span className="navbutton">CONTACT</span>
         </Link>
       </div>
+      <a href="https://discord.gg/47q9SsyMYd" style={{width: 40, height: 40, marginLeft: 10, marginBottom: "5px"}}><img src={Disc} className="discord" style={{width: 40, height: 40}}/></a>
+      
     </div>
   );
 }
